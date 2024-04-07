@@ -1,0 +1,60 @@
+@use "../../styles/partials/mixins" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+    height: 60px;
+
+    &__brand {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__items {
+        align-items: center;
+        gap: 16px;
+        height: 100%;
+        display: none;
+
+        @include tablet {
+            display: flex;
+        }
+
+    }
+
+    &__item {
+        list-style-type: none;
+       
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: gray;
+        }
+    }
+
+    &__mobile {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__hamburger {
+        width: 40px;
+        height: 40px;
+    }
+}
