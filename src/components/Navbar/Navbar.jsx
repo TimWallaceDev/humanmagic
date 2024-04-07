@@ -4,7 +4,7 @@ import "./Navbar.scss"
 
 export function Navbar(){
     return (
-        <nav className="navbar">
+        <nav className="navbar" id="navbar">
             <div className="navbar__brand">
                 <img className="navbar__logo" src={logo} alt="human magic logo"/>
                 <h1 className="navbar__heading">Human Magic</h1>

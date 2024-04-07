@@ -1,0 +1,194 @@
+@use "../../styles/partials/mixins" as *;
+
+$container-padding-top: 64px;
+$container-padding-bottom: 64px;
+$hr-offset-top: 16px;
+$hr-offset-bottom: 16px;
+
+.album-container {
+    position: relative;
+
+
+    &--Cold {
+        background-color: #F26F20;
+    }
+
+    &--Colorful {
+        background-color: #F3EEE1;
+    }
+
+    &--My {
+        background-color: #97C38E;
+    }
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    
+
+    @include tablet {
+        margin: 0 64px;
+        flex-direction: row;
+        border-left: none;
+    }
+
+    @include desktop {
+        margin: 0px 176px;
+    }
+
+    &__cover-wrapper {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        margin-right: 16px;
+        margin-left: 16px;
+        padding-left:  0px;
+        padding-right:  0px;
+        padding-top: $container-padding-top;
+
+        @include tablet {
+            flex: 3;
+            border-right: none;
+            padding: $container-padding-top 32px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+    }
+
+    &__cover {
+        max-width: 100%;
+        padding: 0px;
+    }
+
+    &__information {
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        margin-right: 16px;
+        margin-left: 16px;
+        padding-top: 16px 0px;
+        padding-bottom: $container-padding-bottom;
+        text-align: center;
+
+        @include tablet {
+            flex: 2;
+            padding-top: $container-padding-top;
+            padding-bottom: $container-padding-bottom;
+            border-right: none;
+            margin-right: 0px;
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    &__presents {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-top: 16px;
+
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+
+    &__heading {
+        margin: 32px 0;
+
+
+        &--Brightness {
+            background: -webkit-linear-gradient(#F4D7D7, #D35F5F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        &--Cold {
+            background: -webkit-linear-gradient(#2B9D48, #F3AA1C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &--Colorful {
+            background: -webkit-linear-gradient(#ED6E86, #42C1DD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &--My {
+            background: -webkit-linear-gradient(#F7C26D, #EE9EA2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+        &__tracks {
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        &__track {
+            width: 100%;
+
+            &--number {
+                border: 1px solid black;
+                padding: 0 4px;
+            }
+
+            &--name {
+                border: 1px solid black;
+                text-transform: uppercase;
+                text-align: left;
+                padding-left: 16px;
+            }
+        }
+
+        &__release-date {
+            text-align: center;
+            font-size: 0.8rem;
+            padding-left: 16px;
+            margin-top: 16px;
+
+            @include tablet {
+                text-align: left;
+            }
+        }
+
+        &__button {
+            padding: 16px 32px;
+            border-radius: 8px;
+            background-color: #D35F5F;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+
+            &--Cold {
+                background-color: #2B9D48;
+            }
+
+            &--Colorful {
+                background-color: #42BCD8;
+            }
+
+            &--My {
+                background-color: #EE9EA2;
+            }
+        }
+    }
+
+    .album__hr {
+        border-top: 1px solid black;
+        position: absolute;
+        width: 100%;
+
+        &--top {
+            top: $hr-offset-top;
+        }
+
+        &--bottom {
+            bottom: $hr-offset-bottom;
+        }
+    }
