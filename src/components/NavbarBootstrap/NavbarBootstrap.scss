@@ -1,5 +1,24 @@
+@use "../../styles/partials/mixins" as *;
 
 
-.black-logo {
-    max-width: 48px;
+.navbar {
+
+    @include tablet {
+
+        padding-left: calc(64px - 15px);
+        padding-right: calc(64px - 15px);
+    }
+
+    @include desktop {
+        padding-left: calc(176px - 15px);
+        padding-right: calc(176px - 15px);
+    }
 }
+.black-logo {
+    max-width: 32px;
+}
+
+.logo-human-magic {
+    margin-left: 8px;
+}
+

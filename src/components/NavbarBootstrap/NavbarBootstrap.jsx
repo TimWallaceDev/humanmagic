@@ -1,37 +1,38 @@
 import logo from "../../assets/images/black-logo.png"
 import "./NavbarBootstrap.scss"
+import { Link } from "react-router-dom"
 
 export function NavbarBootstrap() {
 
     return (
         <nav className="navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="index.html">
+                <Link className="navbar-brand" to="/">
                     <img className="img-fluid black-logo" src={logo} alt="Human Magic Lightning Logo" />
                     <span className="logo-human-magic">Human Magic</span>
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="index.html">Home</a>
+                            <Link className="nav-link" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="dates.html">Show Dates</a>
+                            <Link className="nav-link" to="/shows">Show Dates</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="live.html">Live Footage</a>
+                            <Link className="nav-link" to="/live-footage">Live Footage</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="buffet.html">Team</a>
+                            <Link className="nav-link" to="/team">Team</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="shop.html">Shop</a>
+                            <Link className="nav-link" to="/shop">Shop</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="bio.html">Our Story</a>
+                            <Link className="nav-link" to="/our-story">Our Story</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,7 @@
 import logo from "../../assets/images/black-logo.png"
 import hamburgerLogo from "../../assets/icons/hamburger.svg"
 import "./Navbar.scss"
+import { Link } from "react-router-dom"
 
 export function Navbar(){
     return (
@@ -12,22 +13,22 @@ export function Navbar(){
 
             <ul className="navbar__items">
                 <li className="navbar__item">
-                    <a className="navbar__link" href="/">Home</a>
+                    <link className="navbar__link" to="/">Home</link>
                 </li>
                 <li className="navbar__item">
-                    <a className="navbar__link" href="">Show Dates</a>
+                    <link className="navbar__link" to="/dates">Show Dates</link>
                 </li>
                 <li className="navbar__item">
-                    <a className="navbar__link" href="">Live Footage</a>
+                    <link className="navbar__link" to="/live-footage">Live Footage</link>
                 </li>
                 <li className="navbar__item">
-                    <a className="navbar__link" href="">Team</a>
+                    <link className="navbar__link" to="/team">Team</link>
                 </li>
                 <li className="navbar__item">
-                    <a className="navbar__link" href="">Shop</a>
+                    <link className="navbar__link" to="/shop">Shop</link>
                 </li>
                 <li className="navbar__item">
-                    <a className="navbar__link" href="">Our Story</a>
+                    <link className="navbar__link" to="/our-story">Our Story</link>
                 </li>
             </ul>
 
