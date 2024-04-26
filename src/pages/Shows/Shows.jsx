@@ -1,11 +1,19 @@
 import "./Shows.scss"
+import { Show } from "../../components/Show/Show"
 
 export function Shows() {
 
+
+
     return (
-        <>
-            <h1>Shows</h1>
-            <h2> May 4th: 3030 dundas st, Toronto.</h2>
-        </>
+        <main className="shows">
+            <hr className="hr hr--top" />
+            <div className="shows__content">
+                <Show/>
+                {/* <Show/> */}
+            </div>
+            <hr className="hr hr--bottom-top" />
+            <hr className="hr hr--bottom-bottom" />
+        </main>
     )
 }

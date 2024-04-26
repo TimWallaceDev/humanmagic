@@ -12,50 +12,10 @@
     }
 }
 
-@mixin section-padding {
-    padding: 0 16px;
-
-    @include tablet {
-        padding: 0 32px;
-    }
-
-    @include desktop {
-        padding: 0 80px;
-    }
-}
-
-@mixin heading {
-    font-size: 1.5rem;
-    line-height: 32px;
-    font-weight: 700;
-    padding-top: 24px;
-    padding-bottom: 16px;
-
-
-    @include tablet {
-        font-size: 2.0625rem;
-        line-height: 44px;
-        padding-top: 36px;
-        padding-bottom: 24px;
-    }
-}
-
-@mixin body-font {
-    font-size: 0.8125rem;
-    line-height: 18px;
-    font-weight: 400;
-
-    @include tablet {
-        font-size: 0.875rem;
-        line-height: 22px;
-    }
-}
-
-@mixin subheading-font {
-    font-size: 0.8125rem;
-    font-weight: 600;
-
-    @include tablet {
-        font-size: 0.875rem;
-    }
+@mixin button {
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
 }
