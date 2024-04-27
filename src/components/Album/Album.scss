@@ -61,6 +61,10 @@ $hr-offset-bottom: 16px;
     &__cover {
         max-width: 100%;
         padding: 0px;
+
+        &--Colorful {
+            border-radius: 4.5%;
+        }
     }
 
     &__information {
@@ -127,7 +131,9 @@ $hr-offset-bottom: 16px;
 
         &__tracks {
             width: 100%;
-            border: 1px solid black;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: none;
         }
 
         &__track {
@@ -135,11 +141,14 @@ $hr-offset-bottom: 16px;
 
             &--number {
                 border: 1px solid black;
+                border-left: none;
+                border-right: none;
                 padding: 0 4px;
             }
 
             &--name {
                 border: 1px solid black;
+                border-right: none;
                 text-transform: uppercase;
                 text-align: left;
                 padding-left: 16px;
@@ -163,18 +172,31 @@ $hr-offset-bottom: 16px;
             
             &--Brightness {
                 background-color: #D35F5F;
+                &:hover {
+                    background-color: #9c4646;
+                }
             }
 
             &--Cold {
                 background-color: #2B9D48;
+                &:hover {
+                    background-color: #1f7535;
+                }
             }
 
             &--Colorful {
                 background-color: #42BCD8;
+                &:hover {
+                    background-color: #318fa4;
+                }
+                
             }
 
             &--My {
                 background-color: #EE9EA2;
+                &:hover {
+                    background-color: #c98588;
+                }
             }
         }
     }

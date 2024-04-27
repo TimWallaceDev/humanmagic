@@ -18,4 +18,42 @@
     color: white;
     border: none;
     text-transform: uppercase;
+    transition-duration: 0.3s;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@mixin page {
+    position: relative;
+}
+
+@mixin page-content {
+    margin: 0 16px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    min-height: calc(100vh - 60px);
+
+    @include tablet {
+        margin: 0 32px;
+        padding: 0;
+    }
+
+    @include desktop {
+        margin: 0 128px;
+    }
+}
+
+@mixin page-heading {
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    font-weight: 400;
+    font-size: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }

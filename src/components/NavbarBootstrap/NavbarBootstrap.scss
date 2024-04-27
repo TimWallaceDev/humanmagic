@@ -2,6 +2,9 @@
 
 
 .navbar {
+    position: relative; 
+    z-index: 5;
+    padding: 0;
 
     @include tablet {
 
@@ -13,9 +16,24 @@
         padding-left: calc(176px - 15px);
         padding-right: calc(176px - 15px);
     }
+
+    &-toggler {
+        margin: 8px;
+        margin-right: 16px;
+    }
+
+    &-collapse {
+        background-color: white;
+        padding-left: 16px;
+    }
+}
+
+.nav-link {
+    transition-duration: 0.3s;
 }
 .black-logo {
     max-width: 32px;
+    margin-left: 16px;
 }
 
 .logo-human-magic {

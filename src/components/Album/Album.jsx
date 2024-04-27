@@ -10,7 +10,7 @@ export function Album({ album }) {
             <div className="album">
 
                 <div className="album__cover-wrapper">
-                    <img src={album.cover} className="album__cover" alt="brightness album cover" />
+                    <img src={album.cover} className={"album__cover" + ` album__cover--${album.name}`} alt="brightness album cover" />
                 </div>
 
                 <div className="album__information">

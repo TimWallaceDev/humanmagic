@@ -1,40 +1,14 @@
 @use "../../styles/partials/mixins" as *;
 
-.hr {
-    border-top: 1px solid black;
-    position: absolute;
-    width: 100%;
-
-    &--top {
-        top: 16px;
-    }
-
-    &--bottom-top {
-        bottom: 48px;
-    }
-
-    &--bottom-bottom {
-        bottom: 16px;
-    }
-
-}
-
 .shows {
     
-    position: relative;
+    @include page;
+
+    &__heading {
+        @include page-heading;
+    }
     
-
     &__content {
-        margin: 0 16px;
-        padding-top: 32px;
-        padding-bottom: 64px;
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        min-height: calc(100vh - 60px);
-
-        @include tablet {
-            margin: 0 32px;
-            padding: 0;
-        }
+       @include page-content;
     }
 }

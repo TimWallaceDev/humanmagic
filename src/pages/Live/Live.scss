@@ -1,0 +1,52 @@
+@use "../../styles/partials/mixins" as *;
+
+.live {
+    @include page;
+
+    &__heading {
+        @include page-heading
+    }
+
+    &__content {
+
+        @include page-content;
+
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: space-between;
+            padding: 64px 32px;
+        }
+    }
+
+    &__item {
+
+        @include tablet {
+            width: calc(50% - 16px);
+        }
+
+        @include desktop {
+            width: calc(33.33% - 22px)
+        }
+    }
+
+    &__iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    &__title {
+        margin-top: 4px;
+        margin-left: 16px;
+
+    }
+
+    &__venue {
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 1rem;
+        margin-left: 16px;
+
+    }
+}

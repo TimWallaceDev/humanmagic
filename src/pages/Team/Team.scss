@@ -1,7 +1,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .team {
-    position: relative;
+    @include page;
 
     &__heading {
         text-align: center;
