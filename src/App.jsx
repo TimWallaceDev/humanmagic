@@ -1,7 +1,7 @@
 import './App.scss'
 import { Navbar } from './components/Navbar/Navbar'
 import { NavbarBootstrap } from './components/NavbarBootstrap/NavbarBootstrap'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as HashRouter, Routes, Route } from 'react-router-dom'
 
 import { Home } from './pages/Home/Home'
 import { Shows } from "./pages/Shows/Shows"
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <NavbarBootstrap />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ function App() {
           <Route path="/our-story" element={<OurStory />} />
         </Routes>
         <Footer/>
-      </BrowserRouter>
+      </HashRouter>
 
 
     </>
