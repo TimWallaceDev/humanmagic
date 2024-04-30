@@ -33,7 +33,7 @@ export function Album({ album }) {
 
                     <p className="album__release-date">{album.date}</p>
 
-                    <a href={album.link}>
+                    <a href={album.link} target="_blank">
                         <button className={"album__button" + ` album__button--${album.name}`}>
                             Listen Here
                         </button>
