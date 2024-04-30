@@ -102,6 +102,7 @@
     &__date {
         font-size: 1.3rem;
         opacity: 1;
+        text-align: center;
 
         @include tablet {
             font-size: 3rem;

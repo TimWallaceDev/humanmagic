@@ -50,7 +50,7 @@ export function Live() {
 
                 <article className="live__item">
                     <iframe className="live__iframe" src="https://www.youtube.com/embed/6aAtOw9uLPY?si=PqdcWeq4WGeH3PDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <h4 className="live__title">Sledgehammer (Cover)</h4>
+                    <h4 className="live__title">Dancing In The Dark (Cover)</h4>
                     <h5 className="live__venue">Cellar Sessions</h5>
                 </article>
 
