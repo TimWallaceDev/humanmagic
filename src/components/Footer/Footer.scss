@@ -1,0 +1,41 @@
+@use "../../styles/partials/mixins" as *;
+
+
+.footer {
+    background-color: black;
+
+    &__socials {
+        padding: 16px;
+        display: flex;
+        justify-content: space-around;
+        gap: 16px;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        @include tablet {
+            gap: 32px;
+            margin-left: 32px;
+            margin-right: 32px;
+            padding: 32px;
+        }
+
+        @include desktop {
+            gap: 64px;
+            margin-left: 176px;
+            margin-right: 176px;
+
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+
+
+        &:hover {
+            filter: opacity(0.6)
+        }
+
+    }
+}

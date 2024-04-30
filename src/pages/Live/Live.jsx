@@ -4,7 +4,7 @@ export function Live() {
 
     return (
         <main className="live">
-            <h1 className="live__heading">Live Footage</h1>
+            <h1 className="live__heading">Videos</h1>
             <hr className="hr hr--top" />
             <div className="live__content">
 

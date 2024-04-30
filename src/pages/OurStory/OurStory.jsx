@@ -47,7 +47,7 @@ export function OurStory() {
                         With the momentum regained by their studio and video releases, Human Magic sold out their first show back on the scene at the Monarch Tavern in September, 2021. In November, to celebrate the release of “Colorful/Overjoy,” the disco explosion re-enchanted their fans at the Great Hall for over an hour and a half at full tilt. Human Magic electrifies any audience with their extremely energized performances, snappy outfits and dazzling choreography. “Our joyful horns, punching rhythms and searing synth are here to lift you up while you get down.” - (Mojo, synthesist of Human Magic.)
                         <br/>
                         <br/>
-                        Human Magic are set to record again in 2022 with the intention of producing their tightest bangers, bops and slaps to date. They are ready to keep giving back to the community with heart opening performances. They are grateful for each and every opportunity, partnership and collaboration along their way to the international level. Human Magic is on a mission to make people smile, dance, tell the truth and love showing their true colours.
+                        Human Magic are set to record again in 2025 with the intention of producing their tightest bangers, bops and slaps to date. They are ready to keep giving back to the community with heart opening performances. They are grateful for each and every opportunity, partnership and collaboration along their way to the international level. Human Magic is on a mission to make people smile, dance, tell the truth and love showing their true colours.
                     </p>
                 </article>
             </div>

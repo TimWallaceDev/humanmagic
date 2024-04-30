@@ -41,8 +41,8 @@ export function NavbarBootstrap() {
                         <li className={`nav-item ${location.pathname === '/shows' ? 'active' : ''}`}>
                             <Link className="nav-link" to="/shows">Show Dates</Link>
                         </li>
-                        <li className={`nav-item ${location.pathname === '/live-footage' ? 'active' : ''}`}>
-                            <Link className="nav-link" to="/live-footage">Live Footage</Link>
+                        <li className={`nav-item ${location.pathname === '/gallery' ? 'active' : ''}`}>
+                            <Link className="nav-link" to="/gallery">Gallery</Link>
                         </li>
                         <li className={`nav-item ${location.pathname === '/team' ? 'active' : ''}`}>
                             <Link className="nav-link" to="/team">Team</Link>

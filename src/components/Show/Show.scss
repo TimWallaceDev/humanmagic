@@ -30,7 +30,7 @@
             width: auto;
             max-height: calc(100vh - 160px);
             border-right: 1px solid black;
-   
+
         }
 
         &--tablet {
@@ -80,7 +80,7 @@
     }
 
     &__overlay {
-       
+
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -93,8 +93,8 @@
 
         @include tablet {
             background: #f8cce082;
-            background: linear-gradient(90deg, rgba(133,180,224,0.6) 0%, rgba(133,120,186,0.6) 42%, rgba(248,204,224,0.6) 100%);
-            
+            background: linear-gradient(90deg, rgba(133, 180, 224, 0.6) 0%, rgba(133, 120, 186, 0.6) 42%, rgba(248, 204, 224, 0.6) 100%);
+
         }
 
     }
@@ -118,7 +118,7 @@
             font-weight: 700;
             color: white;
         }
-        
+
     }
 
     &__venue {
@@ -134,10 +134,10 @@
 
     &__button {
         @include button;
-        background-color: #c1e3db;
+        background-color: orange;
 
         &:hover {
-            background-color: #aac8c1;
+            background-color: darkorange;
         }
     }
 }
