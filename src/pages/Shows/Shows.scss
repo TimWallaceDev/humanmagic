@@ -10,5 +10,9 @@
     
     &__content {
        @include page-content;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
     }
 }
